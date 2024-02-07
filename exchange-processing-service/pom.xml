@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ru.ustinov.cources</groupId>
-	<artifactId>exchange-processing-seervice</artifactId>
+	<artifactId>exchange-processing-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>processing</name>
 	<description>Exchange processing service</description>
