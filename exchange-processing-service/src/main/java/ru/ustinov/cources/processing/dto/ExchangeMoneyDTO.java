@@ -1,7 +1,6 @@
 package ru.ustinov.cources.processing.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
-import jakarta.persistence.JoinColumn;
 import lombok.Data;
 
 import java.math.BigDecimal;
