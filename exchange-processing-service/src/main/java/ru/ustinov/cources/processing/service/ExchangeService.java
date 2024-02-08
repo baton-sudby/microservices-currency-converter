@@ -24,7 +24,6 @@ public class ExchangeService {
     private final CurrencyService currencyService;
 
     @Lazy
-    @Autowired
     private ExchangeService exchangeService;
 
     public BigDecimal exchangeCurrency(String uuid, Long fromAccount, Long toAccount, BigDecimal amount) {
