@@ -1,4 +1,4 @@
-FROM openjdk:17-oracle
+FROM amazoncorretto:11-al2023-jdk
 ADD target/*.jar app.jar
 
 ENV DB_HOST=localhost

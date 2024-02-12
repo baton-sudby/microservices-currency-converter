@@ -19,6 +19,8 @@ public class AccountService {
 
     public final AccountRepository accountRepository;
 
+    public final ResolveUserService resource;
+
     @Transactional
     public AccountEntity createNewAccount(NewAccountDTO dto) {
         var account = new AccountEntity();
@@ -45,7 +47,8 @@ public class AccountService {
         return accountRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Account with ID " + id + " not found"));
     }
 
-    public List<AccountEntity> getAllAccount(Long userId) {
+    public List<AccountEntity> getAllAccount() {
+        var userId = resource.resolveUserId();
         return accountRepository.findByUserId(userId);
     }
 }
